@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Sobre Gatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1>😺🐾Tudo Sobre Gatos😺🐾</h1>
+        </header>
+        <main>
+            <section id="sobre">
+                <h2>Sobre Gatos</h2>
+                <p>Os gatos são animais domésticos conhecidos por sua independência, elegância e charme.</p>
+                <p>Confira abaixo algumas curiosidades sobre esses adoráveis felinos:</p>
+                <ul>
+                    <li>Gatos dormem em média 12-16 horas por dia.</li>
+                    <li>Os gatos têm 32 músculos em cada orelha, permitindo que elas girem 180 graus.</li>
+                    <li>Gatos têm a capacidade de saltar até seis vezes a altura do próprio corpo.</li>
+                </ul>
+            </section>
+            <section id="fotos">
+                <h2>Gato</h2>
+                <div class="imagem">
+                    <img src="imagens/gato-pulando.jpg" alt="Gato pulando">
+                    <p>Gato pulando.</p>
+                </div>
+            </section>
+
+
+            <h1>Formulário de Adoção de Gatos</h1>
+            <form>
+                <fieldset>
+                    <legend>😺🐾Dados do Adotante😺🐾</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="telefone">Telefone:</label>
+
+                    <input type="tel" id="telefone" name="telefone"><br><br>
+                    <label for="endereco">Endereço:</label>
+                    <textarea id="endereco" name="endereco"></textarea><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>😺🐾Preferências de Gato😺🐾</legend>
+                    <label for="idade"><b>😺🐾Idade Preferida:😺🐾</b></label><br>
+                    <input type="radio" id="idade_jovem" name="idade" value="jovem">
+                    <label for="idade_jovem">Jovem</label><br>
+
+                    <input type="radio" id="idade_adulto" name="idade" value="adulto">
+                    <label for="idade_adulto">Adulto</label><br>
+
+                    <input type="radio" id="idade_idoso" name="idade" value="idoso">
+                    <label for="idade_idoso">Idoso</label><br><br>
+
+                    <label for="personalidade"><b>😺🐾Personalidade Preferida:😺🐾</b></label><br>
+                    <input type="checkbox" id="calmo" name="personalidade[]" value="calmo">
+                    <label for="calmo">Calmo</label><br>
+
+                    <input type="checkbox" id="brincalhao" name="personalidade[]" value="brincalhao">
+                    <label for="brincalhao">Brincalho</label><br>
+
+                    <input type="checkbox" id="deficiente" name="personalidade[]" value="deficiente">
+                    <label for="deficiente">Deficiente</label><br>
+
+                    <input type="checkbox" id="manhoso" name="personalidade[]" value="manhoso">
+                    <label for="manhoso">Manhoso</label><br>
+
+                    <input type="checkbox" id="guloso" name="personalidade[]" value="guloso">
+                    <label for="guloso">Guloso</label><br>
+
+                    <input type="checkbox" id="inteligente" name="personalidade[]" value="curioso">
+                    <label for="inteligente">Inteligente</label><br>
+                    <input type="checkbox" id="curioso" name="personalidade[]" value="curioso">
+                    <label for="curioso">Curioso</label><br>
+                </fieldset>
+
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+        </main>
+    </center>
+</body>
