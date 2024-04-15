@@ -4,23 +4,37 @@ body {
     padding: 0;
 }
 
+.pagina1-body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pagina2-body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pagina3-body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
 header {
-    position: relative; /* Permite posicionar absolutamente a imagem dentro do cabeçalho */
-    height: 60px; /* Altura fixa para o cabeçalho */
-    padding: 10px 20px; /* Ajusta o padding para centralizar o texto do nav */
+    position: relative;
+    height: 60px;
+    padding: 10px 20px;
     background-color: #ffa033;
     color: #fff;
 }
 
 nav {
-    position: absolute; /* Posiciona o nav de forma absoluta dentro do header */
-    left: 220px; /* Espaço para a imagem */
-    right: 20px; /* Mantém espaço à direita */
+    position: absolute;
+    left: 220px;
+    right: 20px;
     top: 0;
     bottom: 0;
     display: flex;
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul {
@@ -28,7 +42,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    align-items: center; /* Centraliza os itens do menu verticalmente */
+    align-items: center;
 }
 
 nav ul li {
@@ -70,13 +84,13 @@ p {
 .imagem {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    left: 10px; /* Espaço a partir da esquerda */
+    transform: translateY(-50%);
+    left: 10px;
 }
 
 .imagem img {
     width: 200px;
-    height: 200px; /* Mantém o tamanho, mas posiciona fora do fluxo normal */
+    height: 200px;
 }
 
 .banner {
@@ -84,30 +98,32 @@ p {
 }
 
 .info {
-    margin-top: 20px; /* Espaçamento entre os blocos */
-    text-align: justify; /* Justifica o texto para um layout uniforme */
+    margin-top: 20px;
+    text-align: justify;
     padding: 10px;
     margin-left: 130px;
     margin-right: 130px;
-    border-radius: 8px; /* Bordas arredondadas para os blocos */
+    border-radius: 8px;
     font-weight: bold;
     
 }
 
 footer {
-    background-color: hsl(27, 93%, 47%); /* Cor de fundo do rodapé */
+    margin-top: 50px;
+    background-color: hsl(27, 93%, 47%);
     color: #fff;
     padding: 20px 0;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    flex-wrap: wrap;
 }
 
 .social-icons a {
@@ -116,18 +132,14 @@ footer {
 }
 
 .social-icons img {
-    width: 40px; /* Tamanho dos ícones */
+    width: 40px;
     height: 40px;
 }
 
 .footer-address p {
-    margin: 5px 0; /* Espaçamento entre as linhas de informação */
+    margin: 5px 0;
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 header {
     background-color: hwb(34 7% 1%);
     color: #fff;
@@ -165,5 +177,6 @@ header {
     font-style: italic;
 }
 
-
-
+fieldset {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: hwb(39 4% 11%);
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(240, 202, 152); 
+}
+
+#pagina-1 {
+  background-color: hsl(118, 83%, 93%);
+}
+
+#pagina-2 {
+  background-color: #ffecc2;
+}
+
+#pagina-3 {
+  background-color: #888888;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
