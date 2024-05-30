@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<center>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="adocao.html">Adoção</a></li>
+                    <li><a href="conhecimento.html">Conhecimento</a></li>
+                    <li><a href="sobre.html">Sobre a Empresa</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Adoção</h1>
+            <p>Informações sobre adoção de gatos.</p>
+
+        </main>
+        <div class="container">
+            <form action="#" method="POST">
+                <h1>Cadastre Seu Gato Para Adoção</h1>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações sobre o Gato</legend>
+                    <label for="nome_gato">Nome do Gato:</label>
+                    <input type="text" id="nome_gato" name="nome_gato">
+                    <label for="idade_gato">Idade do Gato:</label>
+                    <input type="text" id="idade_gato" name="idade_gato">
+                    <label for="cor_gato">Cor do Gato:</label>
+                    <input type="text" id="cor_gato" name="cor_gato">
+                    <label for="comportamento_gato">Comportamento do Gato:</label>
+                    <textarea id="comportamento_gato" name="comportamento_gato"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências do Gato</legend>
+                    <label for="brinquedo_preferido">Brinquedo Preferido:</label>
+                    <input type="text" id="brinquedo_preferido" name="brinquedo_preferido">
+                    <label for="comida_preferida">Comida Preferida:</label>
+                    <input type="text" id="comida_preferida" name="comida_preferida">
+                    <label for="lugar_preferido">Lugar Preferido:</label>
+                    <input type="text" id="lugar_preferido" name="lugar_preferido">
+                    <label for="comportamento_favorito">Comportamento Favorito:</label>
+                    <textarea id="comportamento_favorito" name="comportamento_favorito"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Saúde do Gato</legend>
+                    <label for="vacinas">Vacinas Recebidas:</label>
+                    <input type="text" id="vacinas" name="vacinas">
+                    <label for="alergias">Alergias Conhecidas:</label>
+                    <input type="text" id="alergias" name="alergias">
+                    <label for="medicamentos">Medicamentos Usados:</label>
+                    <input type="text" id="medicamentos" name="medicamentos">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Outras Informações</legend>
+                    <label for="microchip">Microchipado:</label>
+                    <input type="radio" id="sim" name="microchip" value="Sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="microchip" value="Não">
+                    <label for="nao">Não</label>
+                    <label for="castrado">Castrado:</label>
+                    <input type="radio" id="sim" name="castrado" value="Sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="castrado" value="Não">
+                    <label for="nao">Não</label>
+                </fieldset>
+
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <footer>
+            <p>Siga-nos nas redes sociais:</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>Contato: contato@gatosadocao.com.br</p>
+        </footer>
+    </body>
+
+</html>
+</center>
