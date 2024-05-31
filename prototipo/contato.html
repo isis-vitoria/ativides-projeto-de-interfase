@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIAU TUDO SOBRE GATOS - Contato</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8d_qGxQUZ9rrrXRs7bZRusbdR315829M&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var empresa = { lat: -15.871358758678044, lng: -47.8209566 }; 
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: empresa
+            });
+            var marker = new google.maps.Marker({
+                position: empresa,
+                map: map
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="../prototipo/assets/imagens/logo-miau.png" alt="Logo MIAU TUDO SOBRE GATOS">
         </div>
-        <nav aria-label="Main Navigation">
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="adocao.html">Adoção</a></li>
@@ -25,7 +39,7 @@
     <main>
         <section>
             <h1>Contato</h1>
-            <p>Tem alguma dúvida ou deseja saber mais sobre adoção de gatos? Entre em contato conosco através do formulário abaixo:</p>
+            <p>Entre em contato conosco através do formulário abaixo ou visite-nos no nosso endereço.</p>
             <form action="envio_formulario.html" method="post">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -38,6 +52,8 @@
                 
                 <button type="submit">Enviar</button>
             </form>
+            <h2>Localização</h2>
+            <div id="map" style="height: 400px; width: 100%;"></div>
         </section>
     </main>
 
@@ -58,5 +74,7 @@
             </p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
