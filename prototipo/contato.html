@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIAU TUDO SOBRE GATOS - Home</title>
+    <title>MIAU TUDO SOBRE GATOS - Contato</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Site sobre adoção e cuidados com gatos.">
-    <meta name="keywords" content="adoção, gatos, cuidados, pets">
-    <meta name="author" content="Nome do Autor">
 </head>
 <body>
     <header>
@@ -26,33 +23,22 @@
     </header>
 
     <main>
-        <section class="carrossel">
-            <div class="slides">
-                <img src="../prototipo/assets/imagens/gatos11.jpg" alt="Gato 1" class="active">
-                <img src="../prototipo/assets/imagens/gatos22.jpg" alt="Gato 2">
-                <img src="../prototipo/assets/imagens/gatos333.jpg" alt="Gato 3">
-            </div>
-            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        <section>
+            <h1>Contato</h1>
+            <p>Tem alguma dúvida ou deseja saber mais sobre adoção de gatos? Entre em contato conosco através do formulário abaixo:</p>
+            <form action="envio_formulario.html" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
-
-        <section class="testemunhos">
-            <h2>O que dizem sobre nós</h2>
-            <div class="testemunho">
-                <p>"Adotei meu gato através deste site e foi uma experiência maravilhosa!" - Ana</p>
-            </div>
-            <div class="testemunho">
-                <p>"Encontrei ótimas dicas para cuidar do meu gatinho." - João</p>
-            </div>
-            <div class="testemunho">
-                <p>"Adotei meu gato através deste site!" - emily</p>
-            </div>
-            <div class="testemunho">
-                <p>"Encontrei ótimas dicas" - Julio</p>
-            </div>
-        </section>
-
-        <button id="voltar-ao-topo" onclick="scrollToTop()">Voltar ao Topo</button>
     </main>
 
     <footer>
@@ -72,7 +58,5 @@
             </p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
