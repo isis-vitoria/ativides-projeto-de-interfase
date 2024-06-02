@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - MIAU TUDO SOBRE GATOS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8d_qGxQUZ9rrrXRs7bZRusbdR315829M&callback=initMap"
+        async defer></script>
+    <script>
+        function initMap() {
+            var empresa = { lat: -15.871358758678044, lng: -47.8209566 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: empresa
+            });
+            var marker = new google.maps.Marker({
+                position: empresa,
+                map: map
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-orange bg-orange">
+        <div class="container">
+            <div class="imagem">
+                <img src="..//assets/imagens/logo-miau.png" alt="Gatos">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../paginas/adocao.html">Adoção <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/conhecimento.html">Conhecimento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/empresa.html">Sobre a Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/contato.html">Contato</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <body>
+        <main>
+            <section>
+                <h1>Contato</h1>
+                <p>Entre em contato conosco através do formulário abaixo ou visite-nos no nosso endereço.</p>
+                <form action="envio_formulario.html" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <h2>Localização</h2>
+                <div id="map" style="height: 400px; width: 100%;"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <p>&copy; 2024 MIAU TUDO SOBRE GATOS</p>
+                <p>
+                    <a href="../paginas/index.html">Home</a> |
+                    <a href="../paginas/adocao.html">Adoção</a> |
+                    <a href="../paginas/conhecimento.html">Conhecimento</a> |
+                    <a href="../paginas/empresa.html">Sobre a Empresa</a> |
+                    <a href="../paginas/contato.html">Contato</a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com"><img src="../assets/imagens/assetsfacebook-icon.png.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.twitter.com"><img src="../assets/imagens/assetstwitter-icon.png.png"
+                            alt="Twitter"></a>
+                    <a href="https://www.instagram.com"><img src="../assets/imagens/assetsinstagram-icon.png.png"
+                            alt="Instagram"></a>
+                </p>
+            </div>
+        </footer>
+        <button id="voltar-ao-topo" onclick="scrollToTop()">Voltar ao Topo</button>
+        <script src="../style.css"></script>
+    </body>
+    <script src="../script.js"></script>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção - MIAU TUDO SOBRE GATOS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-orange bg-orange">
+        <div class="container">
+            <div class="imagem">
+                <img src="..//assets/imagens/logo-miau.png" alt="Gatos">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../paginas/adocao.html">Adoção <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/conhecimento.html">Conhecimento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/empresa.html">Sobre a Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <main>
+        <section>
+            <h1>Adoção</h1>
+            <p>Veja abaixo os gatos disponíveis para adoção. Clique na imagem para saber mais sobre cada um.</p>
+            <div class="galeria-gatos">
+                <div class="gato">
+                    <img src="../assets/imagens/adocao1.jpg" alt="Gato 1" onclick="mostrarFormulario('Gato 1')">
+                    <p>nino</p>
+                </div>
+                <div class="gato">
+                    <img src="../assets/imagens/adocao2.jpg" alt="Gato 2" onclick="mostrarFormulario('Gato 2')">
+                    <p>lio</p>
+                </div>
+                <div class="gato">
+                    <img src="../assets/imagens/adocao3.jpg" alt="Gato 3" onclick="mostrarFormulario('Gato 3')">
+                    <p>abaldo</p>
+                </div>
+                <div class="gato">
+                    <img src="../assets/imagens/adocao4.jpg" alt="Gato 4" onclick="mostrarFormulario('Gato 4')">
+                    <p>teo</p>
+                </div>
+                <div class="gato">
+                    <img src="../assets/imagens/adocao5.jpg" alt="Gato 5" onclick="mostrarFormulario('Gato 5')">
+                    <p>enzo</p>
+                </div>
+            </div>
+        </section>
+        <section id="formulario-adocao" style="display: none;">
+            <h2>Formulário de Adoção</h2>
+            <p>Interessado em adotar? Preencha o formulário abaixo:</p>
+            <form action="envio_formulario.html" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" required>
+
+                <label for="gato">Gato de Interesse:</label>
+                <input type="text" id="gato" name="gato" readonly>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 MIAU TUDO SOBRE GATOS</p>
+            <p>
+                <a href="../paginas/index.html">Home</a> |
+                <a href="../paginas/adocao.html">Adoção</a> |
+                <a href="../paginas/conhecimento.html">Conhecimento</a> |
+                <a href="../paginas/empresa.html">Sobre a Empresa</a> |
+                <a href="../paginas/contato.html">Contato</a>
+            </p>
+            <p>
+                <a href="https://www.facebook.com"><img src="../assets/imagens/assetsfacebook-icon.png.png"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="../assets/imagens/assetstwitter-icon.png.png"
+                        alt="Twitter"></a>
+                <a href="https://www.instagram.com"><img src="../assets/imagens/assetsinstagram-icon.png.png"
+                        alt="Instagram"></a>
+            </p>
+        </div>
+    </footer>
+    <button id="voltar-ao-topo" onclick="scrollToTop()">Voltar ao Topo</button>
+    <script src="../style.css"></script>
+</body>
+<script src="../script.js"></script>
+
+</html>

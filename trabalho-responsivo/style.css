@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: hwb(26 1% 14%);
+    background-color: rgb(219, 96, 3);
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,8 @@ main {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #333;
 }
 
@@ -62,7 +63,8 @@ h1, h2 {
     display: block;
 }
 
-.carrossel .prev, .carrossel .next {
+.carrossel .prev,
+.carrossel .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -82,7 +84,8 @@ h1, h2 {
     border-radius: 3px 0 0 3px;
 }
 
-.carrossel .prev:hover, .carrossel .next:hover {
+.carrossel .prev:hover,
+.carrossel .next:hover {
     background-color: #f75616cc;
 }
 
@@ -94,7 +97,7 @@ h1, h2 {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -138,17 +141,20 @@ form label {
     margin: 10px 0 5px;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
     padding: 10px;
     margin-bottom: 10px;
 }
 
 form button {
-    background-color: #333333;
+    background-color: #cd1212;
     color: white;
     border: none;
     cursor: pointer;
 }
+
 .galeria-gatos {
     display: flex;
     flex-wrap: wrap;
@@ -177,7 +183,7 @@ form button {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -186,7 +192,6 @@ body {
     padding: 0;
     background-color: #f9f9f9;
 }
-
 
 nav ul {
     list-style: none;
@@ -210,12 +215,57 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .membro img {
-    max-width: 20%; 
-    height: auto; 
+    max-width: 20%;
+    height: auto;
 }
+
 #map {
     height: 400px;
     width: 100%;
     margin-top: 20px;
+}
+
+.navbar {
+    background-color: hwb(25 2% 2%);
+}
+
+.navbar-brand {
+    font-size: 1.0rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    border-color: #fe6f0a;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-nav .active .nav-link {
+    color: #ffc107;
+}
+
+.imagem {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+
+}
+
+.imagem img {
+    width: 200px;
+    height: 200px;
 }

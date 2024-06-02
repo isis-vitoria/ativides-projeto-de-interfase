@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MIAU TUDO SOBRE GATOS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="assets/imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-orange bg-orange">
+        <div class="container">
+            <div class="imagem">
+                <img src="..//assets/imagens/logo-miau.png" alt="Gatos">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adocao.html">Adoção</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conhecimento.html">Conhecimento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="empresa.html">Sobre a Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <main>
+        <section class="carrossel">
+            <div class="slides">
+                <img src="../assets/imagens/gatos11.jpg" alt="Gato 1" class="active">
+                <img src="../assets/imagens/gatos22.jpg" alt="Gato 2">
+                <img src="../assets/imagens/gatos333.jpg" alt="Gato 3">
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </section>
+
+        <section class="testemunhos">
+            <h2>O que dizem sobre nós</h2>
+            <div class="testemunho">
+                <p>"Adotei meu gato através deste site e foi uma experiência maravilhosa!" - Ana</p>
+            </div>
+            <div class="testemunho">
+                <p>"Encontrei ótimas dicas para cuidar do meu gatinho." - João</p>
+            </div>
+            <div class="testemunho">
+                <p>"Adotei meu gato através deste site!" - emily</p>
+            </div>
+            <div class="testemunho">
+                <p>"Encontrei ótimas dicas" - Julio</p>
+            </div>
+        </section>
+        <button id="voltar-ao-topo" onclick="scrollToTop()">Voltar ao Topo</button>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; 2024 MIAU TUDO SOBRE GATOS</p>
+            <p>
+                <a href="https://www.facebook.com"><img src="../assets/imagens/assetsfacebook-icon.png.png"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="../assets/imagens/assetstwitter-icon.png.png"
+                        alt="Twitter"></a>
+                <a href="https://www.instagram.com"><img src="../assets/imagens/assetsinstagram-icon.png.png"
+                        alt="Instagram"></a>
+            </p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>
